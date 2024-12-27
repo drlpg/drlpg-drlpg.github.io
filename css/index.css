@@ -4371,10 +4371,6 @@ figure.highlight pre .javascript .function {
   -ms-transition: 0.3s;
   transition: 0.3s;
 }
-.loading-img {
-  background: url("https://img.wjwj.top/2024/12/21/c8651941eca57de61f62f16a2c5107bf.png") no-repeat center center;
-  background-size: cover;
-}
 #loading-box .loading-img {
   width: 100px;
   height: 100px;
