@@ -885,24 +885,6 @@ document.addEventListener('DOMContentLoaded', () => {
     clickFnOfTagHide()
     tabsFn()
   }
-  
-  const setCategoryBarActive = () => {
-    const categoryBar = document.querySelector("#category-bar");
-    const currentPath = decodeURIComponent(window.location.pathname);
-    const isHomePage = currentPath === GLOBAL_CONFIG.root;
-
-    if (categoryBar) {
-        const categoryItems = categoryBar.querySelectorAll(".category-bar-item");
-        categoryItems.forEach(item => item.classList.remove("select"));
-
-        const activeItemId = isHomePage ? "category-bar-home" : currentPath.split("/").slice(-2, -1)[0];
-        const activeItem = document.getElementById(activeItemId);
-
-        if (activeItem) {
-            activeItem.classList.add("select");
-        }
-    }
-};
 
   const refreshFn = () => {
     initAdjust()
@@ -916,7 +898,6 @@ document.addEventListener('DOMContentLoaded', () => {
       GLOBAL_CONFIG.runtime && addRuntime()
       addLastPushDate()
       toggleCardCategory()
-	  setCategoryBarActive()
     }
 
     GLOBAL_CONFIG_SITE.isHome && scrollDownInIndex()
