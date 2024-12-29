@@ -21,6 +21,28 @@
 	color: var(--font-color);
 }
 
+/* 页脚心跳动画 */
+#heartbeat {
+  color: red;
+  animation: iconAnimate 1s ease-in-out infinite;
+}
+
+/* 定义动画 */
+@keyframes iconAnimate {
+  0%, 100% {
+    transform: scale(1);
+  }
+  10%, 30% {
+    transform: scale(0.9);
+  }
+  20%, 40%, 60%, 80% {
+    transform: scale(1.1);
+  }
+  50%, 70% {
+    transform: scale(1.1);
+  }
+}
+
 @media screen and (max-width: 768px) {
   .ft-item-1 {
     flex-basis: 100% !important;
