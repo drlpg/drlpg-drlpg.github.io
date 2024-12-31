@@ -1,20 +1,20 @@
 /* 设置 Live2D容器的 z-index */
 #oml2d-canvas {
-			z-index: 1 !important;
+			z-index: 6 !important;
 			transform: translateY(-60px) !important;  
 }
 
 #oml2d-stage {
-			z-index: 2 !important;
+			z-index: 7 !important;
 }
 
 #oml2d-menus {
-			z-index: 3 !important;
+			z-index: 8 !important;
 			transform: translateY(-50px) !important;
 }
 
 #oml2d-statusBar {
-			z-index: 4 !important;
+			z-index: 9 !important;
 			font-size: 12px !important;
 			font-weight: normal !important;
 			background-color: #646b73 !important;
