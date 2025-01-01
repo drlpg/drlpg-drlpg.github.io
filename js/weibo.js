@@ -33,7 +33,11 @@ function weibo() {
 }
 
 function getData() {
-    fetch('https://weibo-top-api.vercel.app/api').then(data => data.json()).then(data => {
+    fetch('https://weibo.drlpg.us.kg/weibo').then(data => data.json()).then(data => {
+         if (data == '0') {
+             document.getElementById('weiboContent').innerHTML = '获取微博热搜失败'
+             return
+         }
         data = { time: Date.now(), ls: JSON.stringify(data) }
         localStorage.setItem('weibo', JSON.stringify(data))
     }).then(weibo);
